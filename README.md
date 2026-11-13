@@ -1,6 +1,12 @@
 # OpenSSL bindings for Go
 
-Please see http://godoc.org/github.com/acronis/openssl for more info
+[![Go Reference](https://pkg.go.dev/badge/github.com/acronis/openssl.svg)](https://pkg.go.dev/github.com/acronis/openssl)
+
+A fork of [spacemonkeygo/openssl](https://github.com/spacemonkeygo/openssl) used by Acronis services.
+
+### Build requirements
+
+This fork links against Acronis' own OpenSSL 1.0 build (`liblibssl10`, `liblibcrypto10`) and uses its FIPS API, so it builds only where those libraries are installed. Stock OpenSSL 1.1 and 3.x builds will not work, and the macOS and Windows notes below are kept from upstream for reference only.
 
 ### License
 
